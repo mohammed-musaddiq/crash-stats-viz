@@ -3,7 +3,7 @@
 I found these interesting APIs [here](https://synopticlabs.org/api/products/) that provide past as well as
  ongoing observations from sensors present at various locations, giving real-time data on climatological queries.
 
-Wondering about a way to utilize this source of data, I came across the State of Iowa's crash 
+Wondering about a good way to utilize this source of data, I came across the State of Iowa's crash 
 data [here](https://catalog.data.gov/dataset/crash-data) and wanted to use the APIs mentioned above to explore 
 the impact of environmental conditions on crash incidents. To elaborate, the API when queried with date, time and 
 location of a crash, returns statistics (such as the average, median, maximum values) pertaining to variables (like 
@@ -30,6 +30,7 @@ via the APIs and putting these together with the Iowa DOT's crash metadata, I ma
     weather_cond_code: 31 (code)
     visibility: 0.75 (Statute miles)
     
-Based on the above statistics, the low visibility could have been a possible factor for the crash. Of course, there 
-can be other non-environmental factors involved such as distracted driving, influence of alcohol etc but nevertheless, 
-it is interesting to analyze from a climatological perspective. [Explore and see for yourself!](https://mohammed-musaddiq.github.io/crash-stats-viz/crash_stats.html) 
+Based on the above statistics, the low visibility could have been a possible factor for this crash. Of course, there 
+could also be other non-environmental factors involved such as distracted driving, influence of alcohol etc but 
+nevertheless, it is interesting to analyze from a climatological perspective too. 
+[Explore and see for yourself!](https://mohammed-musaddiq.github.io/crash-stats-viz/crash_stats.html) 
