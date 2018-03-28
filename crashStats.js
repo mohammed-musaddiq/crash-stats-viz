@@ -9,7 +9,7 @@ class CrashStats
     {
         let crashStats_Div = d3.select("#crashStats");
 
-        let margin = {top: 20, right: 20, bottom: 100, left: 150},
+        let margin = {top: 20, right: 20, bottom: 100, left: 164},
             svgBounds = crashStats_Div.node().getBoundingClientRect(),
             width = svgBounds.width - margin.left - margin.right,
             height = 450 - margin.top - margin.bottom;
