@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crash Stats</title>
+    <!-- External Scripts -->
+    <script src="references/d3/d3.min.js"></script>
+    <script src="references/d3-fetch/d3-fetch.min.js"></script>
+    <script src="references/jquery-3.3.1.min.js"></script>
+    <script src="references/popper.js"></script>
+    <script src="references/bootstrap/js/bootstrap.min.js"></script>
+    <script src="references/moment.min.js"></script>
+    <script src="references/d3-scale-chromatic.min.js"></script>
+    <script src="references/d3-legend.min.js"></script>
+    <script src="references/spin.min.js"></script>
+    <script src="references/d3-tip/index.js"></script>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="references/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+                <a class="nav-link font" style="font-size: 25px">State of Iowa's Crashes in 2015</a>
+            </li>
+        </ul>
+    </nav>
+
+    </br></br></br></br>
+
+    <div class="row">
+        <div class="col-sm-1"></div>    <!-- Left margin -->
+
+        <div class="col-sm-10" id="crashStats">
+            <div>
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-3">
+                        <label class="text-center font-weight-bold font-italic" for="months">Select a different month:</label>
+                    </div>
+                    <div class="col-sm-2">
+                        <select class="form-control-sm" id="months" onchange="updatePlot()">
+                            <option selected value=1>January</option>
+                            <option value=2>February</option>
+                            <option value=3>March</option>
+                            <option value=4>April</option>
+                            <option value=5>May</option>
+                            <option value=6>June</option>
+                            <option value=7>July</option>
+                            <option value=8>August</option>
+                            <option value=9>September</option>
+                            <option value=10>October</option>
+                            <option value=11>November</option>
+                            <option value=12>December</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-2">
+                        <label class="text-center font-weight-bold font-italic">Crash severity:</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <svg width="450" height="30">
+                            <circle id="sev1" cx="16" cy="12" r="8"></circle>
+                            <text x="30" y="18">1</text>
+                            <circle id="sev2" cx="50" cy="12" r="8" ></circle>
+                            <text x="64" y="18">2</text>
+                            <circle id="sev3" cx="84" cy="12" r="8"></circle>
+                            <text x="98" y="18">3</text>
+                            <circle id="sev4" cx="118" cy="12" r="8"></circle>
+                            <text x="132" y="18">4</text>
+                            <circle id="sev5" cx="152" cy="12" r="8"></circle>
+                            <text x="166" y="18">5</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            </br>
+            <div>
+                <svg id="crash-plot">
+                    <g id="crash-plot-group">
+                        <g id="xAxis"></g>
+                        <g id="xLabel"></g>
+                        <g id="yAxis"></g>
+                        <g id="yLabel"></g>
+                    </g>
+                </svg>
+            </div>
+        </div>
+
+        <div class="col-sm-1"></div>    <!-- Right margin -->
+    </div>
+
+    <!-- Modal to display crash data -->
+    <div class="modal fade" id="analysisModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title text-info">Crash Info</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body text-danger">
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Internal Scripts -->
+    <script src="data_handler.js"></script>
+    <script src="crashStats.js"></script>
+</body>
+</html>
