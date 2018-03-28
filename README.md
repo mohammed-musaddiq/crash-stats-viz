@@ -1,14 +1,16 @@
 # Crash statistics visualization
 
-I found these interesting APIs[here](https://synopticlabs.org/api/products/) that provide past as well as
+I found these interesting APIs [here](https://synopticlabs.org/api/products/) that provide past as well as
  ongoing observations from sensors present at various locations, giving real-time data on climatological queries.
- 
+
 Wondering about a way to utilize this source of data, I came across the State of Iowa's crash 
-data[here](https://catalog.data.gov/dataset/crash-data)and wanted to use the APIs mentioned above to explore 
+data [here](https://catalog.data.gov/dataset/crash-data) and wanted to use the APIs mentioned above to explore 
 the impact of environmental conditions on crash incidents. To elaborate, the API when queried with date, time and 
-location of a crash, returns statistics (such as the average, median, maximum values)  pertaining to variables (like 
-road temperature, visibility, wind speed etc). According to the FHWA's webpage 
-on[this topic](https://ops.fhwa.dot.gov/weather/q1_roadimpact.htm), weather events like wind speed can impact -
+location of a crash, returns statistics (such as the average, median, maximum values) pertaining to variables (like 
+road temperature, visibility, wind speed etc).
+
+According to the FHWA's webpage on [this topic](https://ops.fhwa.dot.gov/weather/q1_roadimpact.htm), weather events 
+like wind speed can impact -
 * Visibility distance (due to blowing snow, dust)
 * Lane obstruction (due to wind-blown snow, debris)
 
