@@ -32,4 +32,4 @@ via the APIs and putting these together with the Iowa DOT's crash metadata, I ma
     
 Based on the above statistics, the low visibility could have been a possible factor for the crash. Of course, there 
 can be other non-environmental factors involved such as distracted driving, influence of alcohol etc but nevertheless, 
-it is interesting to analyze from a climatological perspective. [Explore and see for yourself!](https://mohammed-musaddiq.github.io/crash-stats-viz/) 
+it is interesting to analyze from a climatological perspective. [Explore and see for yourself!](https://mohammed-musaddiq.github.io/crash-stats-viz/crash_stats.html) 
