@@ -1,4 +1,4 @@
-# Crash statistics visualization
+# [Crash statistics visualization](https://mohammed-musaddiq.github.io/crash-stats-viz/)
 
 I found these interesting APIs [here](https://synopticlabs.org/api/products/) that provide past as well as
  ongoing observations from sensors present at various locations, giving real-time data on climatological queries.
@@ -25,11 +25,11 @@ via the APIs and putting these together with the Iowa DOT's crash metadata, I ma
     Crash Severity: 5
   
 > Nearby sensor observations (via the MesoWest/SynopticLabs API)
-  ----------------------------------------------------------------
+----------------------------------------------------------------
     wind_speed: 4.63 (m/s)
     weather_cond_code: 31 (code)
     visibility: 0.75 (Statute miles)
     
 Based on the above statistics, the low visibility could have been a possible factor for the crash. Of course, there 
 can be other non-environmental factors involved such as distracted driving, influence of alcohol etc but nevertheless, 
-it is interesting to analyze from a climatological perspective.
+it is interesting to analyze from a climatological perspective. [Explore and see for yourself!](https://mohammed-musaddiq.github.io/crash-stats-viz/) 
